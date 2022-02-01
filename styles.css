@@ -27,7 +27,7 @@
   }
 
 .videos{
-      width: 250px;
+      width: 350px;
       height: 200px;
       align-self: center;
       justify-content: center;
@@ -85,7 +85,7 @@
     height: 100%;
     color: white;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     font-family: 'Bebas Neue', cursive;
     align-items: center;
     justify-content: flex-end;
@@ -122,44 +122,34 @@
     min-width: 300px;
 }
 
-.trailer__1 {
-    width: 250px;
-    height: 200px;
-    min-width: 250px;
-    min-height: 200px;
-    border: 5px white solid;
-    
-}
-
 .trailer__1 img {
-    width:240px;
-    height: 190px;
+  width: 100%;
+  height: 100%;
+  min-width: 250px;
+  min-height: 200px;
+  border: 5px white solid;
    
 }
 
-.trailer__2 {
-    width: 250px;
-    height: 200px;
-    min-width: 250px;
-    min-height: 200px;
-    border: 5px white solid;
-    
-}
-
 .trailer__2 img {
-    width:240px;
-    height: 190px;
+  width: 100%;
+  height: 100%;
+  min-width: 250px;
+  min-height: 200px;
+  border: 5px white solid;
 }
 
 .trailer__3 {
-    width: 250px;
+    width: 350px;
     height: 55px;
     border: 1px white solid;
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(20, 20, 20, 0.836);
     margin-bottom: 18px;
 }
-
 
 .trailer__3 h1 {
     text-align: center;
@@ -167,25 +157,6 @@
     font-size: 1.8rem;
     color:white;
     position: relative;
-}
-
-.trailer__3_1 {
-    width: 250px;
-    height: 55px;
-    padding: 10px;
-    border: 1px white solid;
-    position: relative;
-    background-color: rgb(20, 20, 20, 0.836);
-    display: none;
-  }
-
-.trailer__3_1 h1 {
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.8rem;
-    color:white;
-    position: relative;
-    bottom: 10px;
 }
 
 .reproductor iframe{
@@ -196,6 +167,18 @@
 
 
 @media (min-width: 768px){
+
+  main{
+    display: flex;
+  }
+  .section-rep{
+    width: 100%;
+    flex-grow: 2;
+}
+
+.reproductor iframe{
+    display: flex;
+}
 
     .section-header {
         width:100vw;
@@ -221,17 +204,27 @@
 
     .columna__trailers {
         width: 100%;
-        height: 88vh;
+        height: 78vh;
         background-color: rgba(20, 20, 20, 0.836);
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         align-items: center;
-        overflow:auto;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        top: 626px ;
+        padding: 10px;
+        flex-grow: 1;
     }
 
-    .trailer__3_1{
-        display:block;
-    }
+    .trailer__3 {
+      flex-grow: 2;
+      align-self: center;
+      justify-self: center;
+      max-width: 725px;
+  }
+
+  
 }
 
 @media (min-width: 1024px){
@@ -248,9 +241,16 @@
         height: 88vh;
         background-color: rgba(20, 20, 20, 0.836);
         display: flex;
-        flex-flow: column;
+        flex-flow: row wrap;
         align-items: center;
         overflow-y: scroll;
+        position: relative;
+        bottom: 0;
+        top: 0;
+    }
+
+    .videos{
+      max-width: 99%;
     }
 
     ::-webkit-scrollbar-thumb {
