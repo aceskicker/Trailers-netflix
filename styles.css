@@ -33,6 +33,7 @@
       justify-content: center;
       margin: 12px;;
   }
+  
   .encabezado a{
     position: relative;
     left: 8px;
@@ -47,8 +48,40 @@
     left: 12px;
   }
 
+  #burguer{
+    position: absolute;
+    top: 2.7rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  #burguer .barra{
+    width: 30px;
+    height: 2px;
+    margin: 6px;
+    background-color: rgb(255, 255, 255);
+    transition: all 700ms ease-in-out;
+  }
+
+  #burguer.abierto .barra{
+    background-color: red;
+  }
+
+  #burguer.abierto .barra.superior{
+    transform: translateY(8px) rotateZ(45deg);
+  }
+
+  #burguer.abierto .barra.media{
+    width: 0;
+  }
+
+  #burguer.abierto .barra.inferior{
+    transform: translateY(-8px) rotateZ(-45deg);
+  }
+
 .section-header {
-    width:100vw;
+    width: 600px;
     height: 100%;
     color: white;
     display: flex;
@@ -67,6 +100,16 @@
     flex-wrap: wrap;
     position: relative;
     flex-direction: column;
+    bottom: 200px;
+    transition: all 700ms ease-in-out;
+  }
+
+  .section-header.abierto li{
+    bottom: 0px;
+  }
+
+  .nav_4 a{
+    margin-right: 60px;
   }
 
 .columna__trailers {
