@@ -33,6 +33,10 @@
       justify-content: center;
       margin: 12px;;
   }
+  .encabezado a{
+    position: relative;
+    left: 8px;
+  }
 
 .logo {
     display: flex;
@@ -40,6 +44,7 @@
     height: 100%;
     padding: 0px;
     position: relative;
+    left: 12px;
   }
 
 .section-header {
@@ -47,7 +52,7 @@
     height: 100%;
     color: white;
     display: flex;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-family: 'Bebas Neue', cursive;
     align-items: center;
     justify-content: flex-end;
@@ -55,7 +60,7 @@
 }
 
 .section-header li {
-    padding: 8px;
+    padding: 2px;
     margin: 8px ;
     list-style: none;
     display: inline-flex;
@@ -71,6 +76,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    min-width: 300px;
 }
 
 .trailer__1 {
