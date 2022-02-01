@@ -2,7 +2,7 @@
   "name": "trailers-netflix",
   "version": "1.0.0",
   "description": "proyecto enfocado en la realizacion de una pagina donde se puuedan visualizar los trailer recientes de netflix",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
