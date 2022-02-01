@@ -1,0 +1,24 @@
+{
+  "name": "trailers-netflix",
+  "version": "1.0.0",
+  "description": "proyecto enfocado en la realizacion de una pagina donde se puuedan visualizar los trailer recientes de netflix",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aceskicker/Trailers-netflix.git"
+  },
+  "keywords": [
+    "netflix",
+    "trailers",
+    "reciente"
+  ],
+  "author": "Yesid Morales",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aceskicker/Trailers-netflix/issues"
+  },
+  "homepage": "https://github.com/aceskicker/Trailers-netflix#readme"
+}
