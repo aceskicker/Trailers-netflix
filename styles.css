@@ -11,6 +11,7 @@
   main {
     display: flex;
     position: relative;
+    background-color:rgba(20, 20, 20, 0.836);
   }
 
  header {
@@ -47,6 +48,16 @@
     position: relative;
     left: 12px;
   }
+
+  .icono-trailer{
+
+display: none;
+  }
+
+  .icono-trailer img{
+    position: relative;
+  }
+
 
   #burguer{
     position: absolute;
@@ -165,7 +176,6 @@
     display: none;
 }
 
-
 @media (min-width: 768px){
 
   main{
@@ -202,10 +212,35 @@
         flex-direction: column;
       }    
 
+      .icono-trailer{
+        width: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 38px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.8rem;
+        color: #ffffff;
+        cursor: pointer;
+        z-index: 2;
+        left: -25px;
+      }
+
+      .icono-trailer p{
+        position: relative;
+        left: -42px;
+        border: black solid 2px;
+      }
+
+      .icono-trailer:hover{
+        color: rgb(182, 182, 182);
+      }
+
     .columna__trailers {
         width: 100%;
         height: 78vh;
-        background-color: rgba(20, 20, 20, 0.836);
+        background-color: rgb(20, 20, 20);
         display: flex;
         flex-flow: row wrap;
         align-items: center;
@@ -228,48 +263,69 @@
 }
 
 @media (min-width: 1024px){
-    .section-rep{
-        width: 100%;
+  .section-rep{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .reproductor{
+    width: 1536px;
+    transition: all 300ms ease-in-out;
+  }
+
+  .reproductor.abierto{
+    width:1080px;
+    transition: all 300ms ease-in-out;
+  }
+
+    .columna__trailers{
+      width: 30%;
+      height: 88vh;
+      background-color: rgba(20, 20, 20, 0.979);
+      overflow-y: scroll;
+      top: 0;
+      left: -30%;
+      flex-direction: 1 column;
+      transition: all 400ms ease-in-out;
     }
 
-    .reproductor iframe{
-        display: block;
-    }
-
-    .columna__trailers {
+    .columna__trailers.abierto {
         width: 30%;
         height: 88vh;
-        background-color: rgba(20, 20, 20, 0.836);
+        background-color: rgba(20, 20, 20, 0.986);
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         overflow-y: scroll;
-        position: relative;
         bottom: 0;
         top: 0;
+        left: 0;
+        transition: all 400ms ease;
+
     }
 
     .videos{
-      max-width: 99%;
+      max-width: 90%;
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: #b0b0b0;
+        background-color: #6e6e6e;
         background-clip: padding-box;
-        border: 0.05em solid #eeeeee;
+        border: 0.05em solid #808080;
         border-radius: 4px;
       }
       
       ::-webkit-scrollbar-track {
-        background-color: #e2dede;
+        background-color: #8d8d8d;
       }
       /* Buttons */
       ::-webkit-scrollbar-button:single-button {
-        background-color: #bbbbbb;
+        background-color: #6e6e6e;
         display: block;
         border-style: solid;
-        height: 13px;
-        width: 16px;
+        height: 16px;
+        width: 14px;
       }
       /* Up */
       ::-webkit-scrollbar-button:single-button:vertical:decrement {
@@ -302,7 +358,4 @@
         right: 0;
     }
 
-    .trailer__3_1{
-        display: none;
-    }
 }
