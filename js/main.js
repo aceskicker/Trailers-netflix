@@ -10,3 +10,5 @@ $(document).ready(function(){
         $(".columna__trailers").toggleClass("abierto");
         $(".reproductor").toggleClass("abierto");
     })});
+
+ 
